@@ -1,0 +1,37 @@
+SMART EYE OCR PROJECT – 2–3 MINUTE VIDEO SCRIPT
+
+Hello, my name is Sayan Debnath. I am a B.Tech student in Electrical & Computer Engineering.
+
+For the Smart Eye AI/ML Technology Research internship, I built a small Python-based OCR pipeline.
+
+The goal of this project is to take an image containing text, preprocess the image, extract the text using OCR, and return the extracted result.
+
+[Show the project folder and main.py]
+
+I used Python, OpenCV and Tesseract OCR.
+
+The pipeline starts with an input image. First, I resize the image because a larger image can provide better character details for OCR.
+
+Then I convert the image to grayscale. After that, I apply a small Gaussian blur to reduce noise.
+
+Next, I use Otsu thresholding to create a cleaner black-and-white image. This processed image is passed to Tesseract OCR.
+
+[Show the code around preprocess_image() and extract_text()]
+
+Finally, the extracted text is printed in the terminal and also saved into output/result.txt.
+
+[Run the program and show the input image]
+
+Here is the input document image.
+
+[Show terminal output]
+
+And this is the extracted OCR output.
+
+One important limitation is that this is a baseline OCR pipeline. Performance can decrease when the image is heavily blurred, rotated, low-light, or has a complex background.
+
+If I continued improving this project, I would add deskewing, perspective correction, adaptive thresholding, OCR confidence analysis, and compare different OCR engines such as PaddleOCR.
+
+This project helped me understand the complete workflow from image preprocessing to text extraction and also showed me how image quality affects OCR performance.
+
+Thank you.
